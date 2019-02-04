@@ -38,7 +38,7 @@ def graph_loss(losses, name):
     plt.close()
 
 def train(args):
-    model = UNet(in_channels=args.in_channels, n_classes=args.num_classes, depth=args.depth padding=True, up_mode='upsample').to(device)
+    model = UNet(in_channels=args.in_channels, n_classes=args.num_classes, depth=args.depth, padding=True, up_mode='upsample').to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     loader = get_loader(args.img_dir, args.mask_dir, args.batch_size)
 
