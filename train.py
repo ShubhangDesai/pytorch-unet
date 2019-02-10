@@ -22,7 +22,7 @@ def get_parser():
     parser.add_argument('--lr', default=1e-4, type=float)
     parser.add_argument('--use_dice_loss', action='store_true')
     parser.add_argument('--batch_size', default=1, type=int)
-    parser.add_argument('--num_epochs', default=50, type=int)
+    parser.add_argument('--num_epochs', default=10, type=int)
 
     return parser
 
